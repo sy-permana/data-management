@@ -1,1 +1,81 @@
-hello world!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Dement</title>
+    <!-- JavaScript and CSS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    
+</head>
+<body>
+    <script type="text/javascript" src="script/system.js"></script>
+    <header>
+        <nav id="top-nav">
+            <span><p>D-Ment</p></span>
+            <ul>
+                <li><a href="#index-form">Add Data</a></li>
+                <li><a href="#view-data">View Data</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-container">
+        
+        <section class="data" id="add-data">
+            <h1 class="title">Add Data Form</h1>
+            <div class="data-form" id="index-form" >
+                <section class="firstName flex-section">
+                    <label for="firstName">First Name :</label>
+                    <input id="first-name" name="first-name" type="text" class="input" required/>
+                </section>
+                <section class="lastName flex-section">
+                    <label for="lastName">Last Name :</label>
+                    <input id="last-name" name="last-name" type="text" class="input" required/>
+                </section>
+                <section class="nationality flex-section">
+                    <label for="nationality">Nationality :</label>
+                    <select name="nations" id="nations" class="input">
+                        <script>form.select(form.nationality, 'nations');</script>
+                    </select>
+                </section>
+                <section class="phoneNum flex-section">
+                    <label for="phoneNum">Phone :</label>
+                    <input id="phone-num" name="phone-num" type="text" class="input" pattern="{0-9}" required/>
+                </section>
+                <section class="button flex-section" >
+                    <input type="submit" name="add" id="add" value="add data" class="input" onclick=""/>
+                </section>
+            </div>
+        </section>
+
+        <section class="view" id="view-data">
+                <h1 class="title">View Data</h1>
+                <div class="view-data" >
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Nationality</th>
+                                <th class="phone">Phone</th>
+                                <th class="last">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="data">
+                            <script type="text/javascript" src="script/add-data.js"></script>
+                        </tbody>
+                    </table>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://github.com/sy-permana" target="_blank">Surya Permana</a></p>
+        <p>Hacktiv8 bootcamp remote batch 03</p>
+    </footer>
+</body>
+</html>
