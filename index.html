@@ -45,10 +45,10 @@
                 </section>
                 <section class="phoneNum flex-section">
                     <label for="phoneNum">Phone :</label>
-                    <input id="phone-num" name="phone-num" type="text" class="input" pattern="{0-9}" required/>
+                    <input id="phone-num" name="phone-num" type="text" class="input" pattern="[0-9]{6-11}" required/>
                 </section>
                 <section class="button flex-section" >
-                    <input type="submit" name="add" id="add" value="add data" class="input" onclick=""/>
+                    <input type="submit" name="add" id="add" value="add data" class="button"/>
                 </section>
             </div>
         </section>
@@ -63,7 +63,7 @@
                                 <th>Last Name</th>
                                 <th>Nationality</th>
                                 <th class="phone">Phone</th>
-                                <th class="last">Action</th>
+                                <th class="last"></th>
                             </tr>
                         </thead>
                         <tbody id="data">

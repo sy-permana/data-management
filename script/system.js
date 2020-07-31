@@ -23,5 +23,5 @@ let form = {
         }
         var mylist=document.getElementById(id);
         return mylist.innerHTML = str;
-    }
+    },
 }
